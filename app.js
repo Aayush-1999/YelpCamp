@@ -19,7 +19,8 @@ var campgroundRoute = require("./routes/campgrounds"),
     indexRoute      = require("./routes/index");
 
 // mongoose.connect("mongodb://127.0.0.1/camp_data",{useNewUrlParser:true});
-mongoose.connect("mongodb+srv://aayush-agarwal:A2%40agarwal@cluster0-xtzpv.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true});
+// mongoose.connect("mongodb+srv://aayush-agarwal:A2%40agarwal@cluster0-xtzpv.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true});
+mongoose.connect(process.env.DATABASEURL,{useNewUrlParser:true});
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 
