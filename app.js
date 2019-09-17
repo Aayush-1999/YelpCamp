@@ -10,8 +10,8 @@
     methodOverride        = require("method-override"),
     Campground            = require("./models/campground"),
     Comments              = require("./models/comments"),
-    User                  = require("./models/user"),
-    seed                  = require("./seed");
+    User                  = require("./models/user");
+    // seed                  = require("./seed");
 
     require("dotenv").config();
 //ROUTES
